@@ -73,7 +73,7 @@ const MainIntro = () => {
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        <div className="container mx-auto px-4">
+        <div className="container px-4">
           <div className="max-w-lg mx-auto p-8 bg-inherit">
             <h2 className="text-4xl font-bold mb-4">
               Talk to <span className="text-customPurple">Your PDFs</span>

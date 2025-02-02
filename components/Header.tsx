@@ -3,7 +3,8 @@ import aipdfchat from "../public/aipdfchat.svg";
 import {AcmeLogo} from "../public/logo"
 const Header = () => {
   return (
-    <header className="bg-white h-[90px]">
+    <div className="fixed z-20 w-full">
+    <header className="bg-white h-[90px] ">
       <div className="container mx-auto flex justify-between items-center py-4 pl-40 pr-8">
         <div className="flex items-center gap-5">
           <AcmeLogo/>
@@ -22,6 +23,7 @@ const Header = () => {
         </div>
       </div>
     </header>
+    </div>
   );
 };
 
