@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        customPurple:'#8043F9'
+        customPurple:'#8043F9',
+        golden: "#D69D0B",
       },
     },
   },

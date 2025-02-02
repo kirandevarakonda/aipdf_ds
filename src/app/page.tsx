@@ -10,6 +10,7 @@ import MainIntro7 from "../../components/MainIntro7";
 import MainIntro8 from "../../components/MainIntro8";
 import MainIntro9 from "../../components/MainIntro9";
 import MainIntro10 from "../../components/MainIntro10";
+import HeaderUpgrade from "../../components/HeaderUpgrade";
 export default function Home() {
   return (
     <>
