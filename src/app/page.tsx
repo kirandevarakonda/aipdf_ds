@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <>
-    <Header/>
+   <Header/>
     <MainIntro/>
     <MainIntro2/>
     <MainIntro3/>
