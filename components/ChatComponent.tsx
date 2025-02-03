@@ -19,7 +19,7 @@ export default function ChatComponent(){
         <span className="text-3xl font-bold pb-4">Documnets</span>
         <FileUpload isVisible={isVisible}/>
       </div>
-      <div className="ml-[18%]">
+      <div className="ml-[24%]">
       <DocumentsTable/>
       </div>
     </div>
