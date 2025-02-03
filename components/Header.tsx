@@ -1,7 +1,12 @@
+'use client'
+import { useState } from "react";
 import Image from "next/image";
 import aipdfchat from "../public/aipdfchat.svg";
 import {AcmeLogo} from "../public/logo"
+import SignupModal from "./SignUp";
 const Header = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <div className="fixed z-20 w-full">
     <header className="bg-white h-[90px] ">
@@ -17,9 +22,10 @@ const Header = () => {
           <a href="#" className="text-black font-semibold tracking-wide hover:font-bold hover:underline">Pricing</a>
           <a href="#" className="text-black font-semibold tracking-wide hover:font-bold hover:underline">Affiliates</a>
         </nav>
-          <button className="px-5 py-2 bg-customPurple text-white rounded-lg shadow-md hover:bg-blue-500 transition">
+          <button className="px-5 py-2 bg-customPurple text-white rounded-lg shadow-md hover:bg-blue-500 transition" onClick={() => setIsModalOpen(true)}>
             Get Started
           </button>
+          {isModalOpen && <SignupModal onClose={() => setIsModalOpen(false)} />}
         </div>
       </div>
     </header>

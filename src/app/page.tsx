@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import Header from "../../components/Header";
 import MainIntro from "../../components/MainIntro";
@@ -12,6 +13,7 @@ import MainIntro9 from "../../components/MainIntro9";
 import MainIntro10 from "../../components/MainIntro10";
 import HeaderUpgrade from "../../components/HeaderUpgrade";
 export default function Home() {
+
   return (
     <>
     <Header/>

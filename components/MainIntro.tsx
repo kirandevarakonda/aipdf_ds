@@ -68,7 +68,7 @@ const MainIntro = () => {
   }, []);
 
   return (
-    <div className="flex bg-gradient-to-b from-purple-100 to-pink-100 justify-around items-center h-[566px] overflow-hidden">
+    <div className="flex bg-gradient-to-b from-purple-100 to-pink-100 justify-around items-center h-[566px] overflow-hidden pt-20">
       {/* Left Content (Text Section) */}
       <div
         className={`transition-all duration-700 ease-in-out transform ${
