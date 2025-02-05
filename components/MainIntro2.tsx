@@ -199,7 +199,7 @@ const MainIntro2 = () => {
   }, []);
 
   return (
-    <div className="mt-20 flex flex-col justify-center items-center relative">
+    <div className="mt-20 pl-20 flex flex-col justify-center items-center relative">
       {/* Line connecting steps (absolute to align properly) */}
       {/* <div className="absolute left-3 top-12 w-[2px] h-[85%] bg-purple-400 hidden lg:block"></div> */}
 
