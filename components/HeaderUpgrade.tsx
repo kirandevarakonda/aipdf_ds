@@ -3,9 +3,14 @@ import aipdfchat from "../public/aipdfchat.svg";
 import {AcmeLogo} from "../public/logo";
 import UpgradeImage from "../public/lightning01.svg";
 import DownArrow from "../public/arrow--chevron-down.svg";
-import ProfilePic from "../public/ellipse-11@2x.png"
+import ProfilePic from "../public/ellipse-11@2x.png";
+import { useTheme } from "./SignIn";
+import { useContext } from "react";
+import { LoginContext } from "../src/app/page";
 
 const HeaderUpgrade = ()=>{
+  // const {login,setLogin} = useTheme();
+  const {userId,setUserId} = useContext(LoginContext);
   return(
     <div className="fixed z-20 w-full">
     <header className="bg-white h-[90px] ">
@@ -25,7 +30,9 @@ const HeaderUpgrade = ()=>{
           <div className="flex items-center gap-2">
             <span>Kiran</span>
             <Image src={DownArrow} alt="down arrow"></Image>
+            <button onClick={()=>setUserId(null)}>
             <Image src={ProfilePic} alt="Profile Pic" width={40} height={40}></Image>
+            </button>
           </div>
         </div>
     </header>

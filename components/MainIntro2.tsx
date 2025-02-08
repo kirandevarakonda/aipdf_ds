@@ -199,7 +199,7 @@ const MainIntro2 = () => {
   }, []);
 
   return (
-    <div className="mt-20 pl-20 flex flex-col justify-center items-center relative">
+    <div className="mt-20 pl-20 pr-20 flex flex-col justify-center items-center relative">
       {/* Line connecting steps (absolute to align properly) */}
       {/* <div className="absolute left-3 top-12 w-[2px] h-[85%] bg-purple-400 hidden lg:block"></div> */}
 
@@ -236,7 +236,7 @@ const MainIntro2 = () => {
               <Image
                 src={image1png}
                 alt={`image${index + 1}`}
-                className={`w-[80%] sm:w-[630px] h-auto transition-all duration-1000 ease-in-out transform ${
+                className={`w-[100%] sm:w-[630px] h-auto transition-all duration-1000 ease-in-out transform ${
                   visibleSections[index] ? "translate-x-0 opacity-100" : "translate-x-[-100%] opacity-0"
                 }`}
               />
