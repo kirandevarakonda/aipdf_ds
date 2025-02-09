@@ -39,6 +39,11 @@ import { Button } from "./ui/button";
 import { Send, MessagesSquare } from "lucide-react";
 import MessageList from "./MessageList";
 import { Message } from "ai";
+import mainicon from "../public/ai-essentials-icon-set.svg";
+import share from "../public/frame10.svg";
+import download from "../public/frame9.svg";
+import Image from "next/image";
+
 
 type Props = { chatId: number };
 
@@ -68,7 +73,7 @@ const ChatComponent = ({ chatId }: Props) => {
 
     const autoSummarize = async () => {
       if (messages.length === 0 && !isLoading) {
-        await sleep(2000); // 2-second delay
+        await sleep(6000); // 2-second delay
         setInput("Summarize the PDF");
         handleSubmit();
       }
@@ -91,9 +96,21 @@ const ChatComponent = ({ chatId }: Props) => {
       {/* Header */}
       <div className="flex items-center justify-between p-4 bg-white shadow-md sticky top-0">
         <div className="flex items-center space-x-2">
-          <MessagesSquare className="text-primary" />
-          <h3 className="text-lg font-medium">Start Chatting</h3>
+          {/* <MessagesSquare className="text-primary" />
+          <h3 className="text-lg font-medium">Start Chatting</h3> */}
+          {/* <Image src={mainicon} alt="icon"></Image>
+          <h2 className="text-base font-semibold">Summary</h2> */}
         </div>
+        {/* <div className="flex gap-3">
+        <div className="flex gap-2">
+            <Image src={share} alt="share"></Image>
+            <button className="text-normal font-normal">Share Chat</button>
+        </div>
+        <div className="flex gap-2">
+            <Image src={download} alt="download"></Image>
+            <button className="text-normal font-normal">Download Chat</button>
+         </div>
+         </div> */}
       </div>
 
       {/* Message list */}

@@ -179,7 +179,7 @@ export default function ChatPageContent({ chatId, initialChatsData }: ChatPageCo
         <div className="relative">
             {/* < Header1/> */}
 
-            <div className="sticky top-0 left-0 max-h-screen w-full flex overflow-auto">
+            <div className="sticky top-0 mt-5 left-0 max-h-screen w-full flex overflow-auto">
                 
                 {/* Sidebar toggle button */}
                 <div className="flex-col py-8 items-start p-2 [background:linear-gradient(-75.83deg,_rgba(3,_121,_255,_0.16),_rgba(219,_101,_158,_0.16)_52.5%,_rgba(255,_128,_95,_0.16))] flex-1">
@@ -201,13 +201,13 @@ export default function ChatPageContent({ chatId, initialChatsData }: ChatPageCo
                     <div className="transition-all duration-300 border-r bg-muted/40 max-w-[400px] overflow-hidden">
                         <div className="flex h-full max-h-screen flex-col gap-2">
                             <div className="flex h-14 items-center border-b px-4 lg:h-[60px] lg:px-6">
-                                <Link href="/" className="flex items-center gap-2 font-bold h-[100px] ml-1">
+                                <Link href="/" className="flex items-center gap-2 font-bold h-[100px] mt-5 p-4">
                                     <AcmeLogo />
                                     <span> aipdf.chat </span>
                                 </Link>
                             </div>
                             <div className="flex-col overflow-hidden">
-                                <nav className="grid items-start px-2 text-sm font-medium lg:px-4 overflow-y-auto h-full chat-container gap-2">
+                                <nav className="grid items-start px-2 text-sm font-medium lg:px-4 overflow-y-auto h-full chat-container gap-2 p-6">
                                     {chats.map((chat) => (
                                         <Link href={`/chat/${chat.id}`} key={chat.id}>
                                             <div
